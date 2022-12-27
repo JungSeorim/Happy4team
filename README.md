@@ -44,6 +44,6 @@ joined 전략으로 Entity를 만들고 다른 테이블과 대부분 단방향 
 <br>
 <br>
 # ERD
-![ERD](C:\Users\Administrator\Desktop\KakaoTalk_20221227_094840627.png)
+![ERD](\Users\Administrator\Desktop\KakaoTalk_20221227_094840627.png)
 
 
