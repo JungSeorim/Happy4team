@@ -38,8 +38,8 @@ public class NaverService {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
             StringBuilder sb = new StringBuilder();
             sb.append("grant_type=authorization_code");
-            sb.append("&client_id=zX1vXQ8A64kO_j3A6aq1"); // TODO REST_API_KEY 입력
-            sb.append("&client_secret=9VVoLqWufF"); // TODO 인가코드 받은 redirect_uri 입력
+            sb.append("&client_id="); // TODO REST_API_KEY 입력
+            sb.append("&client_secret="); // TODO 인가코드 받은 redirect_uri 입력
             sb.append("&code=" + code);
             bw.write(sb.toString());
             bw.flush();
@@ -168,7 +168,7 @@ public class NaverService {
 
 
     public void logoutNaver(String token){
-        String reqURL ="https://nid.naver.com/oauth2.0/token?grant_type=delete&client_id=zX1vXQ8A64kO_j3A6aq1&client_secret=9VVoLqWufF&access_token="+token+"&service_provider=NAVER";
+        String reqURL ="https://nid.naver.com/oauth2.0/token?grant_type=delete&client_id=&client_secret=&access_token="+token+"&service_provider=NAVER";
         try {
             URL url = new URL(reqURL);
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
